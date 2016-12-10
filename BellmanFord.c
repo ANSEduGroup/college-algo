@@ -9,7 +9,7 @@ struct edge
     char label[10];
 };
 struct edge Edge[20];
-main()
+int main()
 {
   int weight,i,j,s;
   printf("Enter no. of nodes:");
