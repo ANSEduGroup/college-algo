@@ -37,6 +37,7 @@ int main()
   scanf("%d",&s);
   bell(s);
   printd(s);
+  return 0;
 }
 int bell(int s)
 {
