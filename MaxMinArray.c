@@ -1,6 +1,7 @@
 //Maximum and Minimun elements of an array in C
 #include<stdio.h>
 int max,min;
+void maxmin(int[], int, int);
 int main()
 {
    int i,n;
