@@ -1,8 +1,11 @@
 #include<stdio.h>
+
 int arr[40];
+
 void quicksort(int a[],int p,int r);
 int partition(int a[],int p,int r);
 void exchange(int i,int j);
+
 void quicksort(int a[],int p,int r)
 {
    int q;
@@ -13,6 +16,7 @@ void quicksort(int a[],int p,int r)
       quicksort(a,q+1,r);
    }
 }
+
 int partition(int a[],int p,int r)
 {
    int x,j,i;
@@ -27,6 +31,7 @@ int partition(int a[],int p,int r)
    exchange(i+1,r);
    return(i+1);
 }
+
 void exchange(int i,int j)
 {
    int temp;
@@ -34,6 +39,7 @@ void exchange(int i,int j)
    arr[i]=arr[j];
    arr[j]=temp;
 }
+
 int main()
 {
    int n,i;

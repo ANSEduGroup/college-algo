@@ -1,8 +1,11 @@
 #include<stdio.h>
 #include<conio.h>
+
 int a,b,u,v,n,i,j,ne=1;
 int visited[10]= {0},min,mincost=0,cost[10][10];
+
 void sptrepr();
+
 int main()
 {
    printf("\nEnter the no. of nodes:");
@@ -20,6 +23,7 @@ int main()
    sptrepr();
    return 0;
 }
+
 void sptrepr()
 {
    visited[1]=1;

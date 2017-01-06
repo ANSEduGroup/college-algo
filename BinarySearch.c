@@ -21,7 +21,9 @@ int main()
       printf("No. present at %d",(pos+1));
    }
    else
+   {
       printf("Not present");
+   }
    return 0;
 }
 int bsearch(int a[],int i,int l,int x)
@@ -36,7 +38,7 @@ int bsearch(int a[],int i,int l,int x)
    }
    else
    {
-      mid=(i+l)/2;
+      mid=(i+(l-i))/2;
       if(x==a[mid])
       {
          return mid;
